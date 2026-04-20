@@ -125,6 +125,8 @@ def delete_student(student_id):
     conn.close()
     return redirect(url_for("dashboard"))
 
+# ✅ This runs on startup with gunicorn too — NOT just local
+init_db()
+
 if __name__ == "__main__":
-    init_db()
     app.run(debug=True)
