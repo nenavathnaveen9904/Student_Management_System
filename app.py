@@ -5,7 +5,7 @@ import os
 app = Flask(__name__)
 app.secret_key = "secret123"  # needed for session
 
-DB = "students.db"
+DB = "/data/students.db"
 
 # Default credentials
 ADMIN_USER = "admin"
